@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Yusei Magic', sans-serif;
+  font-size: 1.5vw;
+}
+
+/* rules for nav */
+nav {
+  position: relative;
+  position: fixed;
+  width: 100%;
+  height: 10%;
+  z-index: 1;
+} /* position for links inside nav */
+.pages {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+  list-style: none;
+} /* links style */
+.pages li {
+  display: inline-block;
+  margin: 0 1vw;
+  text-align: center;
+} /* anchor style */
+.pages li a {
+  display: block;
+  width: 2.4vw;
+  height: 2.4vw;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 1px 3px 5px black;
+} /* define visited and unvisited links */
+.pages li a:link, .pages li a:visited {
+  color: black;
+  text-decoration: none;
+}
+.pages li a:hover {
+  box-shadow: 1px 3px 5px #AAAAAA;
+}
+.pages li a:active {
+  background-color: black;
+  color: white;
+}
+
+/* container for each pair of shoes */
+.shoes-cnt {
+  position: relative;
+  height: 100vh;
+} /* rules for childerens */
+.shoes-cnt:first-child {
+  color : yellow;
+  background-color: red;
+}
+.shoes-cnt:nth-child(2) {
+  color : yellow;
+  background-color: green;
+}
+.shoes-cnt:nth-child(3) {
+  color: green;
+  background-color: yellow;
+}
+
+/* position shoes image container */
+.shoes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.shoes img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
